@@ -20,8 +20,8 @@ services:
     nginx:
         image: nginx:stable-alpine
         volumes:
-            - ./webapp/log/nginx:/var/log/nginx
-            - ./nginx.conf:/etc/nginx/conf.d/default.conf
+            - ./nginx/log:/var/log/nginx
+            - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
         depends_on:
             - webapp
         environment:
