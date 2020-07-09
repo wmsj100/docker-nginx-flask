@@ -1,0 +1,18 @@
+FROM centos:7
+COPY ./software/vim-plugs.tar.gz ./software/CentOS-Base.repo ./software/.vimrc /root/Downloads/
+WORKDIR /root/Downloads
+RUN mv CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo \
+	&& yum clean all \
+	&& yum makecache \
+	&& yum install -y epel-release iproute vim curl wget tree git bash-completion zip unzip gzip bzip2 \
+	&& yum remove -y vim-minimal \
+	&& tar -xf vim-plugs.tar.gz -C /root \
+	&& mv .vimrc /root \
+	&& rm -rf /root/Downloads \
+	&& ln -sf /usr/bin/vim /usr/bin/vi \
+	&& cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+	&& yum clean all 
+
+ENV LC_ALL en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8

@@ -1,0 +1,18 @@
+FROM centos:7
+COPY ./software/vim-plugs.tar.gz ./software/CentOS-7-anon.repo ./software/.vimrc /root/Downloads/
+RUN mv /root/Downloads/CentOS-7-anon.repo /etc/yum.repos.d/CentOS-Base.repo \
+	&& yum clean all \
+	&& yum makecache \
+	&& yum install -y iproute2 vim binutils curl wget tree bash-completion zip unzip gzip bzip2 \
+	&& yum remove -y vim-minimal \
+	&& yum clean all \
+	&& ln -s /usr/bin/vim /usr/bin/vi 
+
+WORKDIR /root/Downloads
+RUN tar -xf ./vim-plugs.tar.gz -C /root \
+	&& mv .vimrc /root \
+	&& rm -rf /root/Downloads 
+
+ENV LC_ALL en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
