@@ -1051,3 +1051,5 @@
 2020/07/09 03:52:43 [error] 6#6: *3 directory index of "/usr/share/nginx/html" is forbidden, client: 1.85.33.122, server: _, request: "GET / HTTP/1.1", host: "www.mynginx.com:8002"
 2020/07/09 03:52:43 [error] 6#6: *3 directory index of "/usr/share/nginx/html" is forbidden, client: 1.85.33.122, server: _, request: "GET / HTTP/1.1", host: "www.mynginx.com:8002"
 2020/07/09 03:53:13 [error] 6#6: *3 directory index of "/usr/share/nginx/html" is forbidden, client: 1.85.33.122, server: _, request: "GET / HTTP/1.1", host: "www.mynginx.com:8002"
+2020/07/09 06:07:45 [error] 6#6: *1 upstream timed out (110: Operation timed out) while connecting to upstream, client: 1.85.33.122, server: _, request: "GET /api HTTP/1.1", upstream: "uwsgi://172.18.0.2:5000", host: "www.mynginx.com:8002"
+2020/07/09 06:08:50 [error] 6#6: *1 upstream timed out (110: Operation timed out) while connecting to upstream, client: 1.85.33.122, server: _, request: "GET /api HTTP/1.1", upstream: "uwsgi://172.18.0.2:5000", host: "www.mynginx.com:8002"

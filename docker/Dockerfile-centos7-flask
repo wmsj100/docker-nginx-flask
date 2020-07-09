@@ -1,25 +1,30 @@
 FROM centos:7
-COPY ./software/vim-plugs.tar.gz ./software/CentOS-7-anon.repo ./software/.vimrc ./software/pip.conf /root/Downloads/
+COPY ./software /root/Downloads/
 WORKDIR /root/Downloads
-RUN mv /root/Downloads/CentOS-7-anon.repo /etc/yum.repos.d/CentOS-Base.repo \
+RUN mv CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo \
 	&& yum clean all \
 	&& yum makecache \
-	&& yum install -y iproute2 vim binutils curl wget tree bash-completion zip git unzip gzip bzip2 gcc gcc-c++ python3-devel python3-pip \
-	&& yum remove -y vim-minimal \
-	&& yum clean all \
-	&& tar -xf ./vim-plugs.tar.gz -C /root \
+	&& yum install -y iproute vim curl wget tree gcc python3-devel python3-pip python3-wheel \
 	&& mv .vimrc /root \
-	&& git config --global color.status auto \
-        && git config --global color.diff auto \
-        && git config --global credential.helper store \
 	&& ln -sf /usr/bin/vim /usr/bin/vi \
 	&& mkdir /root/.pip \
 	&& mv pip.conf /root/.pip/ \
+	&& yum clean all \
 	&& rm -rf /root/Downloads
 
 RUN python3 -m pip install -U pip \
-	&& python3 -m pip install flask uwsgi
+	&& python3 -m pip install flask uwsgi supervisor
+
+COPY ./flask/supervisord.conf /etc/supervisord.d/supervisord.conf
+COPY ./flask/flask.conf /etc/supervisord.d/conf/flask.conf
+COPY ./flask/app app
+COPY ./flask/run_supervisord.sh ./run_supervisord.sh
+
+#RUN supervisord -c /etc/supervisord.conf 
+
+EXPOSE 5000
 
 ENV LC_ALL en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
+CMD ["bash", "run_supervisord.sh"]
