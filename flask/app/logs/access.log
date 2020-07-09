@@ -1,0 +1,263 @@
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Wed Jul  8 12:25:00 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 08 July 2020 10:57:52
+os: Linux-4.15.0-99-generic #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+nodename: 57ecb7a85357
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/Downloads/app
+writing pidfile to /root/Downloads/app/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/Downloads/app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :5000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x811010
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031110 bytes (1006 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x811010 pid: 831 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 831)
+spawned uWSGI worker 1 (pid: 833, cores: 2)
+spawned uWSGI worker 2 (pid: 834, cores: 2)
+spawned uWSGI worker 3 (pid: 835, cores: 2)
+spawned uWSGI worker 4 (pid: 836, cores: 2)
+Wed Jul  8 12:29:38 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:29:38 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:29:38 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:29:38 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:29:38 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:29:38 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:29:38 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:29:38 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Wed Jul  8 12:29:39 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 08 July 2020 10:57:52
+os: Linux-4.15.0-99-generic #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+nodename: 57ecb7a85357
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/Downloads/app
+writing pidfile to /root/Downloads/app/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/Downloads/app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.18.0.2:5000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0xb2e550
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031110 bytes (1006 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xb2e550 pid: 905 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 905)
+spawned uWSGI worker 1 (pid: 907, cores: 2)
+spawned uWSGI worker 2 (pid: 908, cores: 2)
+spawned uWSGI worker 3 (pid: 909, cores: 2)
+spawned uWSGI worker 4 (pid: 910, cores: 2)
+Wed Jul  8 12:30:07 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:30:07 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:30:07 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:30:07 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:30:07 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:30:07 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:30:07 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jul  8 12:30:07 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Wed Jul  8 12:30:28 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 08 July 2020 10:57:52
+os: Linux-4.15.0-99-generic #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+nodename: 57ecb7a85357
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/Downloads/app
+writing pidfile to /root/Downloads/app/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/Downloads/app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.18.0.2:5000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x125f550
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031110 bytes (1006 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x125f550 pid: 937 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 937)
+spawned uWSGI worker 1 (pid: 939, cores: 2)
+spawned uWSGI worker 2 (pid: 940, cores: 2)
+spawned uWSGI worker 3 (pid: 941, cores: 2)
+spawned uWSGI worker 4 (pid: 942, cores: 2)
+[pid: 942|app: 0|req: 1/1] 1.85.33.122 () {40 vars in 731 bytes} [Wed Jul  8 12:30:55 2020] GET /api => generated 232 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 942|app: 0|req: 2/2] 172.18.0.1 () {32 vars in 347 bytes} [Wed Jul  8 12:40:20 2020] GET /api => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 942|app: 0|req: 3/3] 1.85.33.122 () {40 vars in 731 bytes} [Wed Jul  8 12:54:45 2020] GET /api => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 942|app: 0|req: 4/4] 1.85.33.122 () {42 vars in 762 bytes} [Wed Jul  8 12:57:50 2020] GET /api => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 941|app: 0|req: 1/5] 1.85.33.122 () {42 vars in 762 bytes} [Wed Jul  8 12:57:51 2020] GET /api => generated 232 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 942|app: 0|req: 5/6] 1.85.33.122 () {40 vars in 731 bytes} [Wed Jul  8 13:00:53 2020] GET /api => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 942|app: 0|req: 6/7] 1.85.33.122 () {42 vars in 762 bytes} [Wed Jul  8 13:01:26 2020] GET /api => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 942|app: 0|req: 7/8] 1.85.33.122 () {42 vars in 762 bytes} [Wed Jul  8 13:05:36 2020] GET /api => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 942|app: 0|req: 8/9] 1.85.33.122 () {42 vars in 762 bytes} [Wed Jul  8 13:06:24 2020] GET /api => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 942|app: 0|req: 9/10] 219.144.136.175 () {40 vars in 650 bytes} [Wed Jul  8 14:29:44 2020] GET /api => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 942|app: 0|req: 10/11] 219.144.136.175 () {42 vars in 681 bytes} [Wed Jul  8 14:35:04 2020] GET /api => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+...brutally killing workers...
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Wed Jul  8 14:35:43 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 08 July 2020 10:57:52
+os: Linux-4.15.0-99-generic #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+nodename: 57ecb7a85357
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/Downloads/app
+writing pidfile to /root/Downloads/app/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/Downloads/app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.18.0.2:5000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x1b30550
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031110 bytes (1006 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1b30550 pid: 1241 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1241)
+spawned uWSGI worker 1 (pid: 1243, cores: 2)
+spawned uWSGI worker 2 (pid: 1244, cores: 2)
+spawned uWSGI worker 3 (pid: 1245, cores: 2)
+spawned uWSGI worker 4 (pid: 1246, cores: 2)
+[2020-07-08 14:35:45,878] ERROR in app: Exception on /api [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Downloads/app/app.py", line 28, in api
+    return Response(json.dumps(user), minetype='application/json')
+TypeError: __init__() got an unexpected keyword argument 'minetype'
+[pid: 1244|app: 0|req: 1/1] 219.144.136.175 () {42 vars in 681 bytes} [Wed Jul  8 14:35:45 2020] GET /api => generated 290 bytes in 10 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+...brutally killing workers...
+Wed Jul  8 14:37:32 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Wed Jul  8 14:37:33 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 08 July 2020 10:57:52
+os: Linux-4.15.0-99-generic #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
+nodename: 57ecb7a85357
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/Downloads/app
+writing pidfile to /root/Downloads/app/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/Downloads/app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.18.0.2:5000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x1c2b550
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031110 bytes (1006 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1c2b550 pid: 1312 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1312)
+spawned uWSGI worker 1 (pid: 1314, cores: 2)
+spawned uWSGI worker 2 (pid: 1315, cores: 2)
+spawned uWSGI worker 3 (pid: 1316, cores: 2)
+spawned uWSGI worker 4 (pid: 1317, cores: 2)
+[pid: 1315|app: 0|req: 1/1] 219.144.136.175 () {42 vars in 682 bytes} [Wed Jul  8 14:37:37 2020] GET /api => generated 45 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 1315|app: 0|req: 2/2] 219.144.136.175 () {42 vars in 682 bytes} [Wed Jul  8 14:38:59 2020] GET /api => generated 45 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 1)
+[pid: 1314|app: 0|req: 1/3] 219.144.136.175 () {42 vars in 682 bytes} [Wed Jul  8 14:39:10 2020] GET /api => generated 45 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 1314|app: 0|req: 2/4] 219.144.136.175 () {42 vars in 682 bytes} [Wed Jul  8 14:42:44 2020] GET /api => generated 45 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 1)
+[pid: 1314|app: 0|req: 3/5] 219.144.136.175 () {42 vars in 682 bytes} [Wed Jul  8 14:45:51 2020] GET /api => generated 45 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 1)
+[pid: 1314|app: 0|req: 4/6] 219.144.136.175 () {40 vars in 651 bytes} [Wed Jul  8 14:46:24 2020] GET /api => generated 45 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 1)
+[pid: 1314|app: 0|req: 5/7] 219.144.136.175 () {42 vars in 682 bytes} [Wed Jul  8 14:46:35 2020] GET /api => generated 45 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 1314|app: 0|req: 6/8] 219.144.136.175 () {40 vars in 651 bytes} [Wed Jul  8 14:48:48 2020] GET /api => generated 45 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 1314|app: 0|req: 7/9] 219.144.136.175 () {42 vars in 682 bytes} [Wed Jul  8 14:49:36 2020] GET /api => generated 45 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 1314|app: 0|req: 8/10] 219.144.136.175 () {42 vars in 681 bytes} [Wed Jul  8 14:54:38 2020] GET /api => generated 45 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 1317|app: 0|req: 1/11] 219.144.136.175 () {42 vars in 681 bytes} [Wed Jul  8 14:54:41 2020] GET /api => generated 45 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 1314|app: 0|req: 9/12] 219.144.136.175 () {42 vars in 681 bytes} [Wed Jul  8 14:55:10 2020] GET /api => generated 45 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 1314|app: 0|req: 10/13] 219.144.136.175 () {42 vars in 681 bytes} [Wed Jul  8 14:56:44 2020] GET /api => generated 45 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 1314|app: 0|req: 11/14] 219.144.136.175 () {42 vars in 682 bytes} [Wed Jul  8 15:31:19 2020] GET /api => generated 45 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 1)
+[pid: 1314|app: 0|req: 12/15] 219.144.136.175 () {42 vars in 667 bytes} [Wed Jul  8 15:55:03 2020] GET /api => generated 45 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 1)

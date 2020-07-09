@@ -1,12 +1,10 @@
 FROM centos:7
-COPY ./software/vim-plugs.tar.gz ./software/CentOS-Base.repo ./software/.vimrc /root/Downloads/
+COPY ./software/ /root/Downloads/
 WORKDIR /root/Downloads
 RUN mv CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo \
 	&& yum clean all \
 	&& yum makecache \
-	&& yum install -y epel-release iproute vim curl wget tree git bash-completion zip unzip gzip bzip2 \
-	&& yum remove -y vim-minimal \
-	&& tar -xf vim-plugs.tar.gz -C /root \
+	&& yum install -y epel-release iproute vim curl wget tree bash-completion zip unzip gzip bzip2 \
 	&& mv .vimrc /root \
 	&& rm -rf /root/Downloads \
 	&& ln -sf /usr/bin/vim /usr/bin/vi \
