@@ -29,7 +29,8 @@ def api():
         db = DbOperate()
     except:
         return render_template_string('<h1>Mysql Can not connect</h1>')
-    return render_template_string('<h1>Hello Flask !!!</h1>')
+    print("ok")
+    return render_template_string('<h1>Hello Flask haha www!!!</h1>')
 	#return Response(json.dumps(user), mimetype='application/json')
 
 if __name__ == '__main__':
