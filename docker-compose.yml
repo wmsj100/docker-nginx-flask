@@ -7,6 +7,8 @@ services:
         #container_name: webapp
         depends_on:
             - mysql
+        volumes:
+            - ./webapp:/webapp
     mysql:
         image: mysql:5.7.30
         environment:

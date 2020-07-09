@@ -1,1 +1,3 @@
 webapp/log/*
+webapp/__pycache__/*
+webapp/uwsgi.pid
